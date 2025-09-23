@@ -6,7 +6,8 @@ import Exercise3 from './components/Exercise3';
 import Exercise4 from './components/Exercise4';
 import Exercise5 from './components/Exercise5';
 import Exercise6 from './components/Exercise6';
-
+import Exercise7 from './components/Exercise7';
+import Exercise8 from './components/Exercise8';
 function Navigation() {
   return (
     <nav className="nav">
@@ -22,6 +23,8 @@ function Navigation() {
           <li><Link to="/exercise4">Exercise 4</Link></li>
           <li><Link to="/exercise5">Exercise 5</Link></li>
           <li><Link to="/exercise6">Exercise 6</Link></li>
+          <li><Link to="/exercise7">Exercise 7</Link></li>
+          <li><Link to="/exercise8">Exercise 8</Link></li>
         </ul>
       </div>
     </nav>
@@ -59,20 +62,34 @@ function HomePage() {
       exerciseDescription: "A simple e-commerce website with multiple pages using React Router for navigation.",
       exercisePath: "/exercise4",
       exerciseIcon: "🛒"
-        },
-        {
-          exerciseId: 5,
-          exerciseTitle: "Exercise 5: Counter",
-          exerciseDescription: "A simple counter that increments or decrements based on user-defined step.",
-          exercisePath: "/exercise5",
-          exerciseIcon: "🔢"
-        },
-        {
-          exerciseId: 6,
-          exerciseTitle: "Exercise 6: Item Form",
-          exerciseDescription: "A form to add items with name, description, and quantity to a list.",
-          exercisePath: "/exercise6",
-          exerciseIcon: "📝"
+    },
+    {
+      exerciseId: 5,
+      exerciseTitle: "Exercise 5: Counter",
+      exerciseDescription: "A simple counter that increments or decrements based on user-defined step.",
+      exercisePath: "/exercise5",
+      exerciseIcon: "🔢"
+    },
+    {
+      exerciseId: 6,
+      exerciseTitle: "Exercise 6: Item Form",
+      exerciseDescription: "A form to add items with name, description, and quantity to a list.",
+      exercisePath: "/exercise6",
+      exerciseIcon: "📝"
+    },
+    {
+      exerciseId: 7,
+      exerciseTitle: "Exercise 7: Weather App",
+      exerciseDescription: "Displays weather information for five districts using mock data.",
+      exercisePath: "/exercise7",
+      exerciseIcon: "⛅"
+    },
+    {
+      exerciseId: 8,
+      exerciseTitle: "Exercise 8: CRUD with MongoDB",
+      exerciseDescription: "Perform Create, Read, Update, Delete operations using MongoDB.",
+      exercisePath: "/exercise8",
+      exerciseIcon: "🗄️"
     }
   ];
 
@@ -120,10 +137,12 @@ function App() {
           <Route path="/exercise4/*" element={<Exercise4 />} />
           <Route path="/exercise5" element={<Exercise5 />} />
           <Route path="/exercise6" element={<Exercise6 />} />
+          <Route path="/exercise7" element={<Exercise7 />} />
+          <Route path="/exercise8" element={<Exercise8 />} />
         </Routes>
       </div>
     </Router>
   );
 }
 
-export default App; 
+export default App;
